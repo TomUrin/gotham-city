@@ -1,5 +1,3 @@
-
-
 @extends('main')
 <button class="btn_create"><a class="link" href="{{route('accounts-index')}}">Back to the accounts list</a></button>
 @section('content')
@@ -17,7 +15,7 @@
         </tr>
     </thead>
     <form method="post" action="{{route('accounts-update', $account)}}">
-            <tbody>
+        <tbody>
             <tr>
                 <td> {{$account->accNr}} </td>
                 <td> {{$account->name}} </td>

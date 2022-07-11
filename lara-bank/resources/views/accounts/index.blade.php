@@ -26,13 +26,13 @@ Bank-lara
             <td> {{$account->personId}} </td>
             <td> {{$account->sum}} </td>
             <td><button class="btn_edit"><a href="{{route('accounts-edit', $account)}}">EDIT</a></button>
-            <form method="POST" action="{{route('accounts-delete', $account)}}">
-            <button class="btn_del"  type="submit">DELETE</button></td>
+                <form method="POST" action="{{route('accounts-delete', $account)}}">
+                    <button class="btn_del"  type="submit">DELETE</button></td>
         </tr>
     </tbody>
    @csrf
    @method('delete')
-            </form>
+                </form>
 @endforeach
 </table>
 @endsection

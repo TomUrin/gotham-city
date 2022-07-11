@@ -11,9 +11,9 @@ class Account extends Model
     public function accountNumber()
         {
             $countryCode = 'LT';
-            $controlNumber = mt_rand(10, 15);
+            $conNum = mt_rand(10, 15);
             $bankCode = mt_rand(10000, 99999);
-            $accountNumber = mt_rand(10000000000, 99999999999);
-        return $countryCode . $controlNumber . $bankCode . $accountNumber;
+            $accNum = mt_rand(10000000000, 99999999999);
+        return $countryCode . $conNum . $bankCode . $accNum;
         }
 }
